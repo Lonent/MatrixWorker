@@ -1,11 +1,8 @@
 <?php
-
 class MatrixWorker
 {
-
     public $matrix1;
     public $matrix2;
-
 
     public function __construct($matrix1, $matrix2 = null)
     {
@@ -76,7 +73,6 @@ class MatrixWorker
         return 'Matrix\'s doesn\'t match';
     }
 
-
     private function Printer($matrix): string
     {
         $string = '';
@@ -87,6 +83,4 @@ class MatrixWorker
         }
         return $string;
     }
-
-
 }

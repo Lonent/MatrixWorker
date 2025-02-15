@@ -6,6 +6,9 @@ $matrix1 = [[2, 2, 2, 2], [2, 2, 2, 2], [2, 2, 2, 2]];
 $matrix2 = [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]];
 $matrix3 = [[10, 10, 10, 10], [10, 10, 10, 10], [10, 10, 10, 10]];
 
+$matrixWorker = new MatrixWorker($matrix1);
+echo $matrixWorker->Multiplication() . PHP_EOL;
+
 $matrixWorker = new MatrixWorker($matrix1, $matrix2); // Создание объекта класса для работы с умножением
 
 echo $matrixWorker->Multiplication() . PHP_EOL; // Перемножение матрицы №1 и матрицы №2
@@ -15,6 +18,7 @@ $matrixWorker = new MatrixWorker($matrix3, $matrix1); // Создание объ
 
 echo $matrixWorker->Sum() . PHP_EOL; // Сумма матрицы #3 и матрицы №1
 echo $matrixWorker->Sum(0.5) . PHP_EOL; // Сумма матрицы №3 и 0.5
+
 
 
 
